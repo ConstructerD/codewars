@@ -1,0 +1,143 @@
+rbaumier, Balkoth, Beast, Unnamed, Saka7, JohanWiltink (plus 130 more warriors)
+const check = (a,x) => a.includes(x);
+73 similar code variations are grouped with this oneShow Variations
+
+Best Practices56Clever12
+0ForkCompare with your solutionLink
+olajbanyasz, andersonmcook, SteffenVogel_79, narayanswa30663, fakepanda, wisyr (plus 500 more warriors)
+function check(a,x){
+  return a.includes(x);
+};
+323 similar code variations are grouped with this oneShow Variations
+
+Best Practices26Clever2
+0ForkCompare with your solutionLink
+Shadow_Cat
+/*
+(5) Use ES2015 method to see if array contains the value.
+    Eliminate more cruft.
+*/
+  const check = (a,x)=>a.includes(x)
+
+
+
+
+/*
+  (4) Eliminate all the overhead setup.
+      Use the ES2015 SOME method to see if one or more
+      of the array entries matches our target.
+      Written in the form of a lambda (arrow function) to make it streamlined
+    
+    const check = (a,x)=>a.some(v=>v==x)
+*/
+
+/*
+(3) Filter the Array
+    Reduce it down to matching values or an empty set ... [66]
+    Test the length of the array   [66].length > 0
+
+  function check(a,x){
+    return (a.filter(v=>v==x)).length > 0
+  }
+*/
+
+/*
+(2) Walk the array without ability to break the loop.
+    Create a variable to hold the state of our match.
+    Check if the target is found and return the findings
+
+  function check(a,x){
+    let foundTarget = false
+    a.forEach((v,i,A)=>{
+      if (v==x){ foundTarget = true}
+    })
+    return foundTarget
+  }
+*/
+
+
+/*
+  (1) Manually Walk the array, 
+    Break out of the loop (return true) if you find a match
+    otherwise return false
+
+  function check(a,x){
+    for (let i=0; i<a.length;i++){
+      console.log(a[i])
+      if (a[i]==x){ return true }
+    }
+    return false
+  }
+*/
+Best Practices7Clever0
+0ForkCompare with your solutionLink
+Capocaccia, ekamaks, jaylane, deweis, ptrekell, spikemeister (plus 4 more warriors)
+function check(a,x){
+  return a.indexOf(x) > -1 ? true : false;
+};
+5 similar code variations are grouped with this oneShow Variations
+
+Best Practices6Clever1
+0ForkCompare with your solutionLink
+kris_d
+function check(a,x){
+  var result = false;
+  for(i = 0; i < a.length; i++){
+    if(a[i]==x){
+    result  = true;
+    }
+   
+  }
+  return result;
+};
+check([1, "hey", false], 1);
+Best Practices3Clever0
+0ForkCompare with your solutionLink
+juansgaitan
+const check = (array, value) => !!~array.indexOf(value);
+Best Practices1Clever2
+1ForkCompare with your solutionLink
+donaldsebleung
+let check = (a, v) => a.includes(v);
+Best Practices1Clever0
+0ForkCompare with your solutionLink
+user8476848, e.mihaylin, SandQueen, microorganisms, emgordon154, Cerbrus (plus 18 more warriors)
+check=(a,x)=>a.includes(x);
+22 similar code variations are grouped with this oneShow Variations
+
+Best Practices1Clever0
+0ForkCompare with your solutionLink
+busha98
+function check(a,x){
+  return new Set(a).has(x);
+};
+Best Practices0Clever3
+0ForkCompare with your solutionLink
+Kalkwst, diego.vergara
+var check = function(array, value) {
+  return array.indexOf(value) !== -1;
+};
+Best Practices0Clever2
+0ForkCompare with your solutionLink
+Unihedron
+check=(a,x)=>!!~a.indexOf(x)
+Best Practices0Clever1
+0ForkCompare with your solutionLink
+jcarmona
+function check(a,x){
+  var i=0;
+  var encontrado = false;
+  while (i<a.length && !encontrado){
+    if (a[i]==x){
+      encontrado = true;
+    }
+    i++;
+  }
+  return encontrado;
+};
+Best Practices0Clever1
+0ForkCompare with your solutionLink
+AtomicTutor, Dimasiq
+function check(a,x){
+  return a.filter(e => e === x).length > 0;
+};

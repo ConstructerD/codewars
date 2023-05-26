@@ -1,0 +1,11 @@
+The calendar week #1 always starts with the first Monday in January. Every year contains of 52 (53 for leap years) calendar weeks.
+
+Your task is to calculate the calendar week (1-53) from a given date. For example, the calendar week for the date 2019-01-01 (string) should be 1 (int).
+
+Good luck 👍
+
+See also Wikipedia for further information about calendar weeks.
+
+heads-up: require(xxx) has been disabled
+
+ALGORITHMSDATES/TIME

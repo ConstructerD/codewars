@@ -1,0 +1,1 @@
+const getCount = s => (s.match(/[aeiou]/ig)||[]).length

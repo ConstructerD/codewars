@@ -1,0 +1,82 @@
+yrara, bxrxaxdx, thezero, user7688500, lxnch, ignign0kt (plus 61 more warriors)
+
+function array_diff(a, b) {
+  return a.filter(function(x) { return b.indexOf(x) == -1; });
+}
+49 similar code variations are grouped with this oneShow Variations
+
+Best Practices312Clever203
+92ForkCompare with your solutionLink
+
+zloyrusskiy, Ath3ne, raekwonstorm, woyorus, yumaa, montik (plus 81 more warriors)
+
+function array_diff(a, b) {
+  return a.filter(e => !b.includes(e));
+}
+53 similar code variations are grouped with this oneShow Variations
+
+Best Practices162Clever72
+7ForkCompare with your solutionLink
+mrkishi, BattleRattle, charlie.cochran, darkdescendant, DSKrepps, theipott (plus 24 more warriors)
+
+function array_diff(a, b) {
+  return a.filter(function (v) { return b.indexOf(v) === -1 });
+}
+
+
+26 similar code variations are grouped with this oneShow Variations
+
+Best Practices45Clever12
+0ForkCompare with your solutionLink
+mujuezhike, medharoun
+function array_diff(a, b) {
+
+    var arr = new Array();
+    
+    for(var i = 0;i<a.length;i++){
+        if(b.indexOf(a[i])<0){
+            arr.push(a[i]);
+        }
+    }
+  
+    return arr;
+}
+Best Practices26Clever3
+0ForkCompare with your solutionLink
+Unnamed
+array_diff = require("lodash").difference;
+Best Practices16Clever133
+13ForkCompare with your solutionLink
+asmgf, slugbyte
+function array_diff(a, b) {
+  b = new Set(b)
+  return a.filter(v => !b.has(v))
+}
+1 similar code variation is grouped with this oneShow Variations
+
+Best Practices16Clever12
+0ForkCompare with your solutionLink
+vmalvaro, villo, PaisleyShirt
+function array_diff(a, b) {
+  return  a.filter(function(n){ return b.indexOf(n); });
+}  
+2 similar code variations are grouped with this oneShow Variations
+
+Best Practices7Clever1
+1ForkCompare with your solutionLink
+miso.klima, AcesOfGlory, eduDorus, albinotonnina, RobusK, Petr001 (plus 7 more warriors)
+function array_diff(a, b) {
+  return a.filter(x=>b.indexOf(x));
+}
+10 similar code variations are grouped with this oneShow Variations
+
+Best Practices7Clever0
+01ForkCompare with your solutionLink
+krilleh
+var array_diff = (a, b) => a.filter(item => b.indexOf(item) < 0)
+Best Practices5Clever6
+0ForkCompare with your solutionLink
+CrazyMerlyn, insoluble, bpanatta, myjinxin2015, edwin0258, Dekameron_ (plus 63 more warriors)
+function array_diff(a, b) {
+  return a.filter(x => b.indexOf(x) == -1);
+}

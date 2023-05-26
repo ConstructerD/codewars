@@ -1,0 +1,26 @@
+﻿Additionally It is important that you return combinations in the same order as the original array arr. (see the example below)....
+
+For example:
+
+given an array of unique elements example_arr and an integer example_k:
+
+where example_arr = ['a', 'b', 'c', 'd'] and example_k = 2;
+
+calling the next() method of the iterator should return [ 'a', 'b' ].
+
+if we were to call next() again we should get [ 'a', 'c' ] and so on...
+
+so that if we got all values yielded by the generator we would have the following:
+
+[ 'a', 'b' ] [ 'a', 'c' ] [ 'a', 'd' ] [ 'b', 'c' ] [ 'b', 'd' ] [ 'c', 'd' ]
+
+again, notice the order of the above, as you will need to replicate it in your solution.
+
+Some more things to consider:
+
+If your solution is timing out, it may be because you tried to generate all possible combinations first and then yield each one. This defeats the point of a generator. Some of input values will be large.
+
+Values in arr will always be unique but they may be of different types (i.e. strings, integers, other objects).
+
+The only cases in which you would not be able to produce combinations is that in which arr is null or or has a length less than k. In any of those situations you should return null.
+
